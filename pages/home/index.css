@@ -1,1 +1,10 @@
-/* Desenvolva a estilização da sua página aqui */
+
+@media (max-width: 700px) {
+
+    .container {
+      max-width: 100%;
+      padding: 16px;
+
+    }
+  }
+  

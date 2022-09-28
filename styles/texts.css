@@ -1,0 +1,30 @@
+
+/* NAV TEXTS */
+
+@media (max-width: 700px) {
+    .textLogo {
+        font-weight: var(--font-weight-1);
+    }
+    .textLogo span{
+        color: var(--color-brand-1);
+    }
+}
+
+
+
+/* MAIN TEXTS */
+
+@media (max-width: 700px){
+
+    .totalBox{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100%;
+        height: 45px;
+
+        background-color: var(--color-grey-4);
+    }
+
+}

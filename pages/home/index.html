@@ -4,14 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <title>Control Finance</title>
+
+
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
     <meta name="description" content="Control Finance - Seu controle financeiro">
+
+    <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/globalStyles.css">
-    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="/styles/button.css">
+    <link rel="stylesheet" href="/styles/inputs.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+    <link rel="stylesheet" href="/styles/nav.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/lists.css">
+    <link rel="stylesheet" href="/styles/texts.css">
+    
+
+    <link rel="stylesheet" href="/pages/home/index.css">
+    
+
 </head>
 <body>
-    <main id="app"></main>
+    <header>
+        <nav>
+            <section class="brandLogoSection">
+                <p class="textLogo"><span>Control</span> Finance</p>
+            </section>
+            <section class="navButtonSection">
+                <button class="addNewValue">Registrar novo valor</button>
+            </section>
+        </nav>
+    </header>
+    <main id="app">
+        <section class="container">
+            <section class="appTitleSection">
+                <h1>Resumo financeiro</h1>
+            </section>
+
+            <section class="buttonsSection">
+                <ul>
+                    <li> <button>Todos</button> </li>
+                    <li> <button>Entradas</button> </li>
+                    <li> <button>Saídas</button> </li>
+                </ul>
+            </section>
+
+            <section class="totalSection">
+                <div class="totalBox">
+                    <p>Soma dos valores</p>
+                    <p>R$ 000,00</p>
+                </div>
+            </section>
+
+            <section class="financesListSection">
+                <ul>
+                    <li>
+                        <div class="itemInfos">
+                            <p class="itemPrice">R$ 000,00</p>
+                            <p class="itemCategory">Entrada</p>
+                        </div>
+                        <div class="itemButtons">
+                            <button class="itemRemove">X</button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+    </main>
+
+
     <script src="/scripts/modal.js"></script>
     <script src="valuesData.js"></script>
     <script src="index.js"></script>
