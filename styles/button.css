@@ -2,7 +2,7 @@
 /* NAV BUTTONS */
 
 @media (max-width: 700px) {
-    .navButtonSection{}
+
     .addNewValue {
         width: 100%;
         height: 35px;
@@ -16,9 +16,27 @@
 
         border: none;
         border-radius: var(--radius-1);
+        
+        cursor: pointer;
     }
 }
 
 
 
+
 /* MAIN BUTTONS */
+
+@media (max-width: 500px){
+    .itemRemove{
+        border: none;
+        background-color: var(--fixed-white);
+
+        width: 29px;
+        height: 26px;
+
+        cursor: pointer;
+        
+    }
+    .itemRemove img{
+    }
+}

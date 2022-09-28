@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Control Finance</title>
+
+
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Control Finance - Seu controle financeiro">
+
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/globalStyles.css">
+
+    <link rel="stylesheet" href="/styles/button.css">
+    <link rel="stylesheet" href="/styles/inputs.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+    <link rel="stylesheet" href="/styles/nav.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/lists.css">
+    <link rel="stylesheet" href="/styles/texts.css">
+    
+
+    <link rel="stylesheet" href="/pages/home/index.css">
+    
+
+</head>
+<body>
+    <header class="appHeader">
+        <nav>
+            <section class="brandLogoSection">
+                <p class="textLogo"><span>Control</span> Finance</p>
+            </section>
+            <section class="navButtonSection">
+                <button class="addNewValue">Registrar novo valor</button>
+            </section>
+        </nav>
+    </header>
+    <main id="app">
+        <section class="container">
+            <section class="appTitleSection">
+                <h1>Resumo financeiro</h1>
+            </section>
+
+            <section class="buttonsSection">
+                <ul>
+                    <li> <button>Todos</button> </li>
+                    <li> <button>Entradas</button> </li>
+                    <li> <button>Saídas</button> </li>
+                </ul>
+            </section>
+
+            <section class="totalSection">
+                <div class="totalBox">
+                    <p>Soma dos valores</p>
+                    <p>R$ 000,00</p>
+                </div>
+            </section>
+
+            <section class="financesListSection">
+                <ul>
+                    <li class="financeLi">
+                        <div class="itemInfos">
+                            <p class="itemPrice">R$ 000,00</p>
+                            <div class="itemCategory">
+                                <p>Entrada</p>
+                            </div>
+                        </div>
+                        <div class="itemButtons">
+                            <button class="itemRemove">
+                                <img src="/assets/trash.svg" alt="">
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="financeLi">
+                        <div class="itemInfos">
+                            <p class="itemPrice">R$ 000,00</p>
+                            <div class="itemCategory">
+                                <p>Entrada</p>
+                            </div>
+                        </div>
+                        <div class="itemButtons">
+                            <button class="itemRemove">
+                                <img src="/assets/trash.svg" alt="">
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+        <section class="modalContainer">
+            <section class="modalBox">
+                <header class="modalHeader">
+                    <div class="modalTitle">
+                        <p>Registro de valor</p>
+                    </div>
+                    <div class="modalClose">
+                        <button class="closeBttn">X</button>
+                    </div>
+                </header>
+
+                <main class="modalMain">
+                    <section class="modalDescription">
+                        <p>Digite o valor e em seguida aperte no botão referente ao tipo do valor </p>
+                    </section>
+                    <section class="modalValue">
+                        <label for="modalValue">Valor</label>
+                        <input type="number" name="modalValue" id="newValue">
+                        <p class="moeda">R$</p>
+                    </section>
+                    <section class="modalCategory">
+                        <div class="categoryTitle">
+                            <p>Tipo de valor</p>
+                        </div>
+                        <div class="categoryButtons">
+                            <button class="bttnEntrada">
+                                Entrada
+                            </button>
+                            <button class="bttnSaida">
+                                Saída
+                            </button>
+                        </div>
+                    </section>
+                    <section class="modalButtons">
+                        <button class="bttnCancelar">
+                            Cancelar
+                        </button>
+                        <button class="bttnInserir">
+                            Inserir valor
+                        </button>
+                    </section>
+                </main>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <script src="/scripts/modal.js"></script>
+    <script src="valuesData.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
