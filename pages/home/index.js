@@ -22,14 +22,3 @@ let totalBoxDiv = document.querySelector('.totalBox')
         totalSum.innerHTML = `R$ ${itensSum()}`
 
 totalBoxDiv.append(totalSum)
-
-function itensSum(){
-
-    let total = 0
-
-    for(let i = 0; i < insertedValues.length; i++){
-        total += insertedValues[i].value
-    }
-
-    return total
-}

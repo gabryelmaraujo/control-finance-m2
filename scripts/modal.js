@@ -153,6 +153,7 @@ saidaBttn.addEventListener('click', () => {
         })
     }
 })
+
 function categoryCheck(){
 
     let index = insertedValues.length-1
