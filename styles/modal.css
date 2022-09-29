@@ -175,4 +175,8 @@
         
     }
 
+    .hiddenModal {
+        visibility: hidden;
+    }
+
 }
