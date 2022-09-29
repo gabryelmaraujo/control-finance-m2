@@ -40,6 +40,11 @@
 /* FINANCES LIST SECTION */
 @media (max-width: 700px) {
 
+    .financeUl {
+        max-height: 260px;
+        overflow-y: scroll;
+    }
+
     .financeLi {
         display: flex;
         justify-content: space-between;

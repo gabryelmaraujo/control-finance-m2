@@ -128,42 +128,65 @@ body.append(modalContainer)
 
 /* -------------------------- ADD VALUE CONFIG--------------- */
 
+//CONFIG ENTRADA & SAIDA BUTTONS
+
+let index = insertedValues.length
+
+entradaBttn.addEventListener('click', () => {
+    if(inputValue.value.length > 0){
+
+        insertedValues.push({
+            id: index,
+            value: inputValue.value,
+            categoryID: 1
+        })  
+    }
+})
+
+saidaBttn.addEventListener('click', () => {
+    if(inputValue.value.length > 0){
+
+        insertedValues.push({
+            id: index,
+            value: inputValue.value,
+            categoryID: 2
+        })
+    }
+})
+function categoryCheck(){
+
+    let index = insertedValues.length-1
+
+    if(insertedValues[index].categoryID == 2){
+        return 'Saída'
+    }else{
+        return 'Entrada'
+    }
+}       
+
 insertBttn.addEventListener('click', () => {
     let financeUl = document.querySelector('.financeUl')
 
 if(inputValue.value.length > 0){
-
 let financeLi = document.createElement('li')
     financeLi.classList.add('financeLi')
+    financeLi.id = `${insertedValues[index].categoryID}`
 
     let itemInfosDiv = document.createElement('div')
         itemInfosDiv.classList.add('itemInfos')
 
         let itemPrice = document.createElement('p')
             itemPrice.classList.add('itemPrice')
-            itemPrice.innerHTML = `R$ ${inputValue.value}`
-// item category
-entradaBttn.addEventListener('click', () => {
-    let categoryDiv = document.createElement('div')
-        categoryDiv.classList.add('itemCategory')
+            itemPrice.innerHTML = `R$ ${insertedValues[index].value}`
 
-        let categoryParag = document.createElement('p')
-            categoryParag.innerText = 'Entrada'
+        let catDiv = document.createElement('div')
+            catDiv.classList.add('itemCategory')
 
-    categoryDiv.append(categoryParag)
-    itemInfosDiv.append(categoryDiv)
-})
-saidaBttn.addEventListener('click', () => {
-    let categoryDiv = document.createElement('div')
-        categoryDiv.classList.add('itemCategory')
-
-        let categoryParag = document.createElement('p')
-            categoryParag.innerText = 'Saída'
-
-    categoryDiv.append(categoryParag)
-    itemInfosDiv.append(categoryDiv)
-})
-
+            let catParag = document.createElement('p')
+                catParag.innerHTML = `${
+                    categoryCheck()
+                }`
+    
     let itemBttnDiv = document.createElement('div')
         itemBttnDiv.classList.add('itemButtons')
 
@@ -183,19 +206,25 @@ bttnRemove.addEventListener('click', () => {
 bttnRemove.append(removeImg)
 itemBttnDiv.append(bttnRemove)
 
-itemInfosDiv.append(itemPrice)
+catDiv.append(catParag)
+
+itemInfosDiv.append(itemPrice, catDiv)
 
 financeLi.append(itemInfosDiv, itemBttnDiv)
 financeUl.append(financeLi)
 
+/* ATT TOTAL SUM */
+
+
 /* fechar modal */
 
 modalContainer.remove()
-
-}else{
-    alert('Você precisa preencher um valor para adicionar um item.')
 }
+
 })
+
+
+
 }
 
 

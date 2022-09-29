@@ -23,6 +23,9 @@
         padding: 25px;
 
         background-color: var(--fixed-white);
+
+
+        animation: scaleUp .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
     }
 
     .modalHeader {
@@ -179,4 +182,19 @@
         visibility: hidden;
     }
 
+    .modalBox {
+        animation-name: slide;
+        animation-duration: var(--animation-duration);
+    }
+    
+    @keyframes slide {
+        from {
+            top: 0
+        }
+        to {
+            top: 50px
+        }
+    }
+
 }
+
