@@ -20,3 +20,27 @@
 
     
 }
+
+@media (min-width: 700px) {
+
+    .appHeader {
+        height: 109px;
+
+        margin-bottom: 65px;
+
+        display: flex;
+        align-items: center;
+
+        background-color: var(--color-grey-5);
+    }
+
+    nav{
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: space-between;
+
+        width: 700px;
+    }
+
+}

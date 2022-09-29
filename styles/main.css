@@ -14,3 +14,29 @@
         margin-bottom: 30px;
     }
 }
+
+
+/* DESKTOP STYLES */
+
+@media (min-width: 700px){
+    
+    .mainHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-bottom: 30px;
+    }
+
+    .totalSection {
+        margin-bottom: 40px;
+        padding: 0 16px;
+    }
+
+    .totalBox {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+}

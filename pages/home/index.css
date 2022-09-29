@@ -7,4 +7,16 @@
 
     }
   }
-  
+
+
+  /* DESKTOP STYLES */
+
+
+  @media (min-width: 700px) {
+    .container {
+      width: 700px;
+      margin: 0 auto;
+
+      padding: 16px;
+    }
+  }

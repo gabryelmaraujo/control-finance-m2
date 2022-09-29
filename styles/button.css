@@ -26,7 +26,7 @@
 
 /* MAIN BUTTONS */
 
-@media (max-width: 500px){
+@media (max-width: 700px){
     .itemRemove{
         border: none;
         background-color: var(--fixed-white);
@@ -37,6 +37,39 @@
         cursor: pointer;
         
     }
-    .itemRemove img{
+
+}
+
+@media (min-width: 700px) {
+
+    .addNewValue {
+        width: 100%;
+        height: 35px;
+
+        padding: 0 15px;
+
+        color: var(--fixed-white);
+        background-color: var(--color-brand-1);
+
+        font-weight: var(--font-weight-1);
+        font-size: var(--font-size-4);
+        font-family: var(--font-family-1);
+
+        border: none;
+        border-radius: var(--radius-1);
+        
+        cursor: pointer;
     }
+
+    .itemRemove{
+        border: none;
+        background-color: var(--fixed-white);
+
+        width: 29px;
+        height: 26px;
+
+        cursor: pointer;
+        
+    }
+
 }
