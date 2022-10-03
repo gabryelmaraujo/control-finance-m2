@@ -135,17 +135,27 @@ let index = insertedValues.length
 entradaBttn.addEventListener('click', () => {
     if(inputValue.value.length > 0){
 
+        arrEntradas.push({
+            id: index,
+            value: inputValue.value,
+            categoryID: 1
+        })
         insertedValues.push({
             id: index,
             value: inputValue.value,
             categoryID: 1
-        })  
+        })
     }
 })
 
 saidaBttn.addEventListener('click', () => {
     if(inputValue.value.length > 0){
 
+        arrSaidas.push({
+            id: index,
+            value: inputValue.value,
+            categoryID: 2
+        })
         insertedValues.push({
             id: index,
             value: inputValue.value,
