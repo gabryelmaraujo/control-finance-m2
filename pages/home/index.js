@@ -16,9 +16,9 @@ navBttnSection.append(registerBttn)
 
 registerBttn.addEventListener('click', modalOpen)
 
-let totalBoxDiv = document.querySelector('.totalBox')
-    let totalSum = document.createElement('p')
-        totalSum.classList.add('totalSum')
-        totalSum.innerHTML = `R$ ${itensSum()}`
+// let totalBoxDiv = document.querySelector('.totalBox')
+//     let totalSum = document.createElement('p')
+//         totalSum.classList.add('totalSum')
+//         totalSum.innerHTML = `R$ ${itensSum()}`
 
-totalBoxDiv.append(totalSum)
+// totalBoxDiv.append(totalSum)

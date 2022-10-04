@@ -1,10 +1,27 @@
-function itensSum(){
+function totalSum(){
+    let sum = 0
+    insertedValues.forEach((element)=>{
+        sum += element.value
+    })
+    return sum
+}
 
-    let total = 0
+function entradasSum(){
+    let sum = 0
+    insertedValues.forEach((element)=>{
+        if(element.categoryID == 1){
+            sum += element.value
+        }
+    })
+    return sum
+}
 
-    insertedValues.forEach( (element) => {
-        total += element.value
-    });
-
-    return total
+function saidasSum(){
+    let sum = 0
+    insertedValues.forEach((element)=>{
+        if(element.categoryID == 2){
+            sum += element.value
+        }
+    })
+    return sum
 }

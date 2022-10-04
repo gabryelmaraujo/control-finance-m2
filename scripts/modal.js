@@ -137,12 +137,12 @@ entradaBttn.addEventListener('click', () => {
 
         arrEntradas.push({
             id: index,
-            value: inputValue.value,
+            value: parseInt(inputValue.value),
             categoryID: 1
         })
         insertedValues.push({
             id: index,
-            value: inputValue.value,
+            value: parseInt(inputValue.value),
             categoryID: 1
         })
     }
@@ -153,12 +153,12 @@ saidaBttn.addEventListener('click', () => {
 
         arrSaidas.push({
             id: index,
-            value: inputValue.value,
+            value: parseInt(inputValue.value),
             categoryID: 2
         })
         insertedValues.push({
             id: index,
-            value: inputValue.value,
+            value: parseInt(inputValue.value),
             categoryID: 2
         })
     }
