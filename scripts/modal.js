@@ -225,7 +225,17 @@ financeLi.append(itemInfosDiv, itemBttnDiv)
 financeUl.append(financeLi)
 
 /* ATT TOTAL SUM */
+let totalBox = document.querySelector('.totalBox')
 
+if(totalBox.childElementCount != 0){
+let totalSumOld = document.querySelector('.totalSum')
+    totalSumOld.remove()
+}
+let totalSumNew = document.createElement('p')
+    totalSumNew.classList.add('totalSum')
+    totalSumNew.innerHTML = `R$ ${totalSum()},00`
+        
+totalBox.append(totalSumNew)
 
 /* fechar modal */
 
