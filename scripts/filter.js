@@ -265,6 +265,9 @@ saidasBttn.addEventListener('click', ()=>{
         totalSumNew.innerHTML = `R$ ${saidasSum()},00`
             
     totalBox.append(totalSumNew)
+
+    //BUTTON REMOVE SUM
+
     
     financesListSection.append(financeUlNew)
 })
